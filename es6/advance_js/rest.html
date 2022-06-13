@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest op</title>
+    <script>
+
+        //if we want to run for loop for numeric number 
+/*
+        function num (){
+            console.log(arguments);
+
+            let sum = 0;
+            for (let i in arguments){
+                sum += arguments[i];s
+            }
+            document.write(sum + "<br>")
+        }
+        sum(20,30,40);
+*/
+    // But if theirer are one stinf before number then it will not work. for that we need to use resr op 
+
+    function sum (fname,lname, ...args){
+            console.log(arguments);
+                document.write(`hello ${fname} ${lname} :`)
+            let sum = 0;
+            for (let i in args){
+                sum += args[i];
+            }
+            document.write(sum + "<br>")
+        }
+        sum("Meet","patel",20,30,40);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
